@@ -1,0 +1,56 @@
+/*新增活动~活动时间*/
+
+.ActivityTime,
+.ActivityTime span,
+.ActivityTime input[type="text"] {
+	float: left;
+}
+
+.ActivityTime span {
+	width: 18px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.ActivityTime input[type="text"] {
+	width: 200px;
+}
+
+
+/*新增活动~奖品设置*/
+
+.GradeCondition,
+.GradeCondition span,
+.GradeCondition p,
+.GradeCondition input[type="text"] {
+	float: left;
+}
+
+.GradeCondition {
+	margin-right: 10px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.GradeCondition p {
+	margin: 0 5px;
+}
+
+.GradeCondition input[type="text"] {
+	width: 50px;
+}
+
+.GradeCondition input.PrizeName {
+	width: 150px;
+}
+
+.slideDown {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 7.5px 0;
+	color: #FFFFFF;
+	text-align: center;
+	background: #337ab7;
+	cursor: pointer;
+}

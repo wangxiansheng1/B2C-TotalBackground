@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品管理-商品产地</title>
+		<link href="../../style/plus/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../../style/plus/lightbox.css"/>
+		<link href="../../style/plus/common.css" rel="stylesheet" type="text/css">
+		<link href="../../style/CommodityManagement/CommodityOrigin.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<!--商品产地-->
+		<!--商品管理商品规格-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">商品管理<span>&gt;</span>商品产地</p>
+			<!--主体内容-->
+			<div class="comments">
+				<div class="comments-search">
+					<p class="common-little-title">产地列表</p>
+					<div class="comments-search-item">
+						<div class="data-reset">
+							<a href="javascript:;" class="btn btn-info" data-toggle="modal" data-target="#CommodityBrand"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;新增产地</a>
+						</div>
+					</div>
+				</div>
+				<!--活动列表-->
+				<div class="comments-list">
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="specificationsList">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th class="col-md-3">产地名称</th>
+										<th class="col-md-3">图片</th>
+										<th class="col-md-3">排序</th>
+										<th class="col-md-3">控制</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>美国</td>
+										<td>
+											<a class="example-image-link" href="../../images/activity221_06(6).jpg" data-lightbox="example-1">
+												<img class="example-image" src="../../images/activity221_06(6).jpg" alt="image-1" />
+											</a>
+										</td>
+										<td><input type="text" class="common-value"></td>
+										<td>
+											<a data-toggle="modal" data-target="#EditOrigin">编辑</a>
+											<a data-toggle="modal" data-target="#Delete">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td>中国</td>
+										<td>
+											<a class="example-image-link" href="../../images/activity221_06(6).jpg" data-lightbox="example-1">
+												<img class="example-image" src="../../images/activity221_06(6).jpg" alt="image-1" />
+											</a>
+										</td>
+										<td><input type="text" class="common-value"></td>
+										<td>
+											<a data-toggle="modal" data-target="#EditOrigin">编辑</a>
+											<a data-toggle="modal" data-target="#Delete">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!--分页器-->
+							<div class="fixed">
+								<div class="list-fenye">
+									<span>共100</span>
+									<span><em>1/5</em>页</span>
+									<ul class="pagination">
+										<li>
+											<a href="#">&laquo;</a>
+										</li>
+										<li class="active">
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											<a href="#">4</a>
+										</li>
+										<li>
+											<a href="#">5</a>
+										</li>
+										<li>
+											<a href="#">&raquo;</a>
+										</li>
+									</ul>
+									<span>跳转到<input type="text"></span>
+									<a href="javascript:;" class="btn btn-primary">确定</a>
+								</div>
+							</div>
+							<!--/分页器-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/商品产地-->
+		<!--新增模态框（Modal） -->
+		<div class="modal fade" id="CommodityBrand" tabindex="-1" role="dialog" aria-labelledby="CommodityBrandLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="CommodityBrandLabel">新增商品产地</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">产地名称:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">LOGO图片:</label>
+								<div class="col-md-9 browse">
+									<input type="text" class="form-control" readonly="readonly" />
+									<a class="btn btn-primary">上传</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label control-label-pictur">预览LOGO:</label>
+								<div class="col-md-5">
+									<img src="../../images/back_03.jpg" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">排序:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">提交</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--/新增模态框（Modal） -->
+		<!--编辑模态框（Modal） -->
+		<div class="modal fade" id="EditOrigin" tabindex="-1" role="dialog" aria-labelledby="EditOriginLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="EditOriginLabel">编辑商品产地</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">产地名称:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">LOGO图片:</label>
+								<div class="col-md-9 browse">
+									<input type="text" class="form-control" readonly="readonly" />
+									<a class="btn btn-primary">上传</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label control-label-pictur">预览LOGO:</label>
+								<div class="col-md-5">
+									<img src="../../images/back_03.jpg" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">排序:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">提交</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--/编辑模态框（Modal） -->
+		<!--删除模态框（Modal） -->
+		<div class="modal fade" id="Delete" tabindex="-1" role="dialog" aria-labelledby="DeleteLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="DeleteLabel">删除提示</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-12 control-label">你确定要删除商品产地信息吗?</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">确认</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--删除模态框（Modal） -->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/lightBox.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

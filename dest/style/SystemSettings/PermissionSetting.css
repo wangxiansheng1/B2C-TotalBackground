@@ -1,0 +1,16 @@
+ /*新增按钮*/
+ 
+ .btn-info {
+ 	display: none;
+ 	width: 120px;
+ 	height: 37px;
+ 	line-height: 24px;
+ }
+ 
+ .radio-inline select {
+ 	width: 220px;
+ }
+ 
+ 
+ 
+  

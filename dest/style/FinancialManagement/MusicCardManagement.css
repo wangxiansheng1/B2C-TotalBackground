@@ -1,0 +1,46 @@
+  #NewlyAdded .form-horizontal .radio-inline {
+  	padding: 0 !important;
+  	padding-top: 5px !important;
+  	text-align: center;
+  	height: 20px;
+  	line-height: 20px;
+  	margin-left: 25px;
+  }
+  
+  #NewlyAdded .form-horizontal .radio-inline .Location {
+  	width: 15px;
+  	height: 15px;
+  }
+  /*添加活动~活动时间*/
+  
+  .ActivityTime,
+  .ActivityTime span,
+  .ActivityTime input[type="text"] {
+  	float: left;
+  }
+  
+  .ActivityTime span {
+  	width: 18px;
+  	text-align: center;
+  	line-height: 35px;
+  }
+  
+  .ActivityTime input[type="text"] {
+  	width: 200px;
+  }
+  /*充值面额/优惠金额*/
+  
+  .ActivityTime input[type="text"] {
+  	width: 200px;
+  }
+  /*充值面额/优惠金额*/
+  
+  .AmountOfMoney input {
+  	float: left;
+  	width: 50px;
+  	margin-right: 15px;
+  	margin-top: 10px;
+  	text-align: center;
+  }
+  
+   

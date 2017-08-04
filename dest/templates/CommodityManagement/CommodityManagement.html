@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台商品管理-商品管理</title>
+		<link href="../../style/plus/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../../style/plus/common.css" rel="stylesheet" type="text/css">
+		<link href="../../style/CommodityManagement/CommodityManagement.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<!--评论管理-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">商品管理</p>
+
+			<!--评论-->
+			<div class="comments">
+				<!--评论查询-->
+				<div class="comments-search">
+					<p class="common-little-title">商品查询</p>
+					<div class="comments-search-item">
+						<div class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">商品名称</span><input type="text" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">商品货号</span><input type="text" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">店铺名称</span><input type="text" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">商品状态</span>
+									<select class="form-control">
+										<option value="0" selected>暂存</option>
+										<option value="1">待审核</option>
+										<option value="2">待上架</option>
+										<option value="3">出售中</option>
+										<option value="4">已下架</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">选择分类</span>
+									<select class="form-control">
+										<option value="0" selected>一级分类</option>
+										<option value="1"></option>
+										<option value="2"></option>
+										<option value="3"></option>
+										<option value="4"></option>
+										<option value="5"></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<select class="form-control">
+										<option value="0" selected>二级分类</option>
+										<option value="1"></option>
+										<option value="2"></option>
+										<option value="3"></option>
+										<option value="4"></option>
+										<option value="5"></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<select class="form-control">
+										<option value="0" selected>三级分类</option>
+										<option value="1"></option>
+										<option value="2"></option>
+										<option value="3"></option>
+										<option value="4"></option>
+										<option value="5"></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">供应商</span>
+									<select class="form-control">
+										<option value="0" selected></option>
+										<option value="1"></option>
+										<option value="2"></option>
+										<option value="3"></option>
+										<option value="4"></option>
+										<option value="5"></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<a href="javascript:;" class="btn btn-primary">查询</a>
+							</div>
+						</div>
+						<div class="data-reset">
+							<a class="btn btn-info"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;审核</a>
+							<a href="javascript:;" class="btn btn-info"><span class="glyphicon glyphicon-circle-arrow-up"></span>&nbsp;&nbsp;上架</a>
+							<a href="javascript:;" class="btn btn-info"><span class="glyphicon glyphicon-circle-arrow-down"></span>&nbsp;&nbsp;下架</a>
+							<a href="javascript:;" class="btn btn-info"><span class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;导出</a>
+							<a href="javascript:;" class="btn btn-info Waiting"><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;删除</a>
+							<a href="javascript:;" class="btn btn-info Waiting"><span class="glyphicon glyphicon-circle-arrow-left"></span>&nbsp;&nbsp;取消处理</a>
+						</div>
+					</div>
+				</div>
+				<!--评论列表-->
+				<div class="comments-list">
+					<ul class="navTable nav nav-tabs">
+						<li class="active">
+							<a class="ListOfCommodities" href="#ListOfCommodities" data-toggle="tab">商品列表</a>
+						</li>
+						<li>
+							<a class="ProcessedGoods" href="#ProcessedGoods" data-toggle="tab">处理商品</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="ListOfCommodities">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th class="col-md-3"><input type="checkbox" name="b" />商品名称</th>
+										<th class="col-md-1">销售价</th>
+										<th class="col-md-1">税费</th>
+										<th class="col-md-1">库存</th>
+										<th class="col-md-2">所属分类</th>
+										<th class="col-md-1">所属店铺</th>
+										<th class="col-md-1">商品状态</th>
+										<th class="col-md-2">控制</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>暂存</td>
+										<td>
+											<a href="ViewVerchandise.html">查看</a>
+											<a href="MerchandiseEditor.html"> 编辑</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>待审核</td>
+										<td>
+											<a href="ViewVerchandise.html">查看</a>
+											<a href="MerchandiseEditor.html"> 编辑</a>
+											<a data-toggle="modal" data-target="#ToExamine">审核</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>待上架</td>
+										<td>
+											<a href="ViewVerchandise.html">查看</a>
+											<a href="MerchandiseEditor.html"> 编辑</a>
+											<a data-toggle="modal" data-target="#Handle">处理</a>
+											<a href="javascript:;">上架</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>出售中</td>
+										<td>
+											<a href="ViewVerchandise.html">查看</a>
+											<a data-toggle="modal" data-target="#Handle">处理</a>
+											<a href="javascript:;">下架</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>已下架</td>
+										<td>
+											<a href="ViewVerchandise.html">查看查看</a>
+											<a href="MerchandiseEditor.html"> 编辑</a>
+											<a data-toggle="modal" data-target="#Handle">处理</a>
+											<a href="javascript:;">上架</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade in " id="ProcessedGoods">
+							<table class="table table-striped table-hover">
+								<thead>
+									<tr>
+										<th class="col-md-3"><input type="checkbox" name="b" />商品名称</th>
+										<th class="col-md-1">销售价</th>
+										<th class="col-md-1">税费</th>
+										<th class="col-md-1">库存</th>
+										<th class="col-md-2">所属分类</th>
+										<th class="col-md-1">所属店铺</th>
+										<th class="col-md-1">商品状态</th>
+										<th class="col-md-2">控制</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name="a" /> 【乐虎自营双十一主会场】德运奶粉 800g德国集装箱直发，速度来抢！</td>
+										<td>¥ 56.8</td>
+										<td>¥ 12.5</td>
+										<td>113</td>
+										<td>3C数码>手机>iphone</td>
+										<td>乐虎自营</td>
+										<td>处理商品</td>
+										<td>
+											<a href="ViewVerchandise.html">查看</a>
+											<a data-toggle="modal" data-target="#Delete">删除</a>
+											<a data-toggle="modal" data-target="#CancelProcessing">取消处理</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--分页器-->
+					<div class="fixed">
+						<div class="list-fenye">
+							<span>共100</span>
+							<span><em>1/5</em>页</span>
+							<ul class="pagination">
+								<li>
+									<a href="#">&laquo;</a>
+								</li>
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">&raquo;</a>
+								</li>
+							</ul>
+							<span>跳转到<input type="text"></span>
+							<a href="javascript:;" class="btn btn-primary">确定</a>
+						</div>
+					</div>
+					<!--/分页器-->
+				</div>
+			</div>
+		</div>
+		<!--/评论管理-->
+		<!--新增评论模态框（Modal） -->
+		<div class="modal fade" id="AddComments" tabindex="-1" role="dialog" aria-labelledby="AddCommentsLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="ModifyMessageLabel">新增评论</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">商品货号:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">虚拟会员ID:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">评论内容:</label>
+								<div class="col-md-5">
+									<textarea name="" rows="" cols=""></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">评论星级:</label>
+								<div class="col-md-5">
+									<img src="../../images/Shortcut_114_114.png" />
+									<img src="../../images/Shortcut_114_114.png" />
+									<img src="../../images/Shortcut_114_114.png" />
+									<img src="../../images/Shortcut_114_114.png" />
+									<img src="../../images/Shortcut_114_114.png" />
+									<img src="../../images/Shortcut_114_114.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary modal-btn-primary">提交</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--新增评论模态框（Modal） -->
+		<!-- 添加图片分类模态框（Modal） -->
+		<div class="modal fade" id="AddImageClassification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">添加图片分类</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">分类名称:</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">确认</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 添加图片分类模态框（Modal） -->
+		<!--处理模态框模态框（Modal） -->
+		<div class="modal fade" id="Handle" tabindex="-1" role="dialog" aria-labelledby="HandleLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="HandleLabel">处理商品</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">处理原因:</label>
+								<div class="col-sm-8">
+									<textarea class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">提交</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--处理模态框模态框（Modal） -->
+		<!--审核模态框模态框（Modal） -->
+		<div class="modal fade" id="ToExamine" tabindex="-1" role="dialog" aria-labelledby="ToExamineLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="ToExamineLabel">审核商品</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">审核条件:</label>
+								<div class="col-sm-8">
+									<textarea class="form-control"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">审核通过</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">审核不通过</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--审核模态框模态框（Modal） -->
+		<!--删除模态框（Modal） -->
+		<div class="modal fade" id="Delete" tabindex="-1" role="dialog" aria-labelledby="DeleteLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="DeleteLabel">确认删除</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-12 control-label">你确定要删除此商品信息吗?</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">确认</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--删除模态框（Modal） -->
+		<!--取消处理模态框（Modal） -->
+		<div class="modal fade" id="CancelProcessing" tabindex="-1" role="dialog" aria-labelledby="CancelProcessingLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="CancelProcessingLabel">确认取消处理</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-12 control-label">你确定要取消处理此商品信息吗?</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary modal-btn-primary">确认</button>
+						<button type="button" class="btn btn-default modal-btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--取消处理模态框（Modal） -->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//-全选
+		$("input[name='b']").click(function() {
+			//判断当前点击的复选框处于什么状态$(this).is(":checked") 返回的是布尔类型
+			if($(this).is(":checked")) {
+				$("input[name='a']").prop("checked", true);
+			} else {
+				$("input[name='a']").prop("checked", false);
+			}
+		});
+
+		$(".ProcessedGoods").on('click', function() {
+			$(".Waiting").css('display', 'inline-block');
+		})
+		$(".ListOfCommodities").on('click', function() {
+			$(".Waiting").css('display', 'none');
+		});
+	</script>
+
+</html>

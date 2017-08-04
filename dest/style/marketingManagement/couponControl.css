@@ -1,0 +1,53 @@
+  .couponControl-item p,
+  .couponCtrol-search p,
+  .couponControl-list p {
+  	font-size: 16px;
+  	font-weight: bold;
+  	color: #000000
+  }
+  /*券码管理*/
+  
+  .couponControl-item,
+  .couponCtrol-search,
+  .couponControl-list {
+  	width: auto;
+  	height: auto;
+  	margin-top: 20px
+  }
+  
+  .couponControl-item-total {
+  	width: 100%;
+  	height: auto;
+  	padding: 20px 0;
+  	border: 1px solid #e0e0e0
+  }
+  
+  .couponControl-item-total .item-total {
+  	margin-left: 40px;
+  	display: inline-block
+  }
+  
+  .couponControl-item-total .item-total span {
+  	display: block;
+  	text-align: center;
+  	line-height: 26px
+  }
+  
+  .couponControl-item-total a {
+  	width: 120px;
+  	height: 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin-left: 40px;
+  	line-height: 30px;
+  	border-radius: 4px;
+  	background: #3cc0b6;
+  	color: #ffffff;
+  	display: inline-block;
+  	position: relative;
+  	top: -10px
+  }
+  
+  .couponControl-item-total a:hover {
+  	background: #1d9188
+  }

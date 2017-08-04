@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-修改店铺等级</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/StoreManagement/changeShopLevel.css" />
+	</head>
+
+	<body>
+		<!--店铺管理-->
+		<div class="container">
+			<!--公共头部模块-->
+			<header>修改等级</header>
+			<!--/公共头部模块-->
+			<!--内容区域-->
+			<div class="wrapper">
+				<table border="0" cellspacing="" cellpadding="" rules="rows">
+					<tr>
+						<td><span>等级名称:&nbsp;&nbsp;</span><input class="Name fillet" type="text" placeholder="原登记名称" /></td>
+					</tr>
+					<tr>
+						<td><span>等级等级:&nbsp;&nbsp;</span><input class="CheckBox Location" type="checkbox" />新销售额累计超过&nbsp;&nbsp;<input type="text" placeholder="10000" />&nbsp;&nbsp;元&nbsp;<input class="CheckBox Location" type="checkbox" />商品综合率达到&nbsp;&nbsp;<input type="text" placeholder="97" />&nbsp;&nbsp;%</td>
+					</tr>
+					<tr>
+						<td><span>启用状态:&nbsp;&nbsp;</span>
+							<div class="tabSwitch"><b class="Enable">启用</b><b class="Disable">停用</b></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a class="submit">提交</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--/内容区域-->
+		</div>
+		<!--/店铺管理-->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//启用/停用的背景切换
+		$(".tabSwitch b").on('click', function() {
+			console.log("ok");
+			$(this).css('background', '#55a9ef');
+			$(this).siblings().css('background', ' #909395');
+		})
+	</script>
+
+</html>

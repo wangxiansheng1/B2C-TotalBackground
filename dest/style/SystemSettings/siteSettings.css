@@ -1,0 +1,87 @@
+ .comments-list {
+ 	margin-top: 10px;
+ }
+ /*全站设置*/
+ 
+ .StationSettingBox {
+ 	margin-top: 10px;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list {
+ 	overflow: auto;
+ 	zoom: 1;
+ 	overflow-y: hidden;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list>span,
+ .StationSettingBox .StationSettingBox-list .browse,
+ .StationSettingBox .StationSettingBox-list .browse input {
+ 	float: left;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list>span {
+ 	width: 17%;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	text-align: left;
+ 	margin-left: 50px;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list .browse {
+ 	width: 60%;
+ 	height: 50px;
+ 	line-height: 54px;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list .browse span {
+ 	margin: 0 10px;
+ 	float: left;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list .browse input {
+ 	margin: 10px 0;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list .browse input.form-control-text {
+ 	width: 240px;
+ }
+ 
+ .StationSettingBox .StationSettingBox-list .browse a {
+ 	margin: 10px 0;
+ }
+ /*订单设置和积分设置input的height*/
+ 
+ #OrderSetting .browse input,
+ #IntegralSetting .browse input {
+ 	width: 80px;
+ }
+ 
+ #IntegralSetting .StationSettingBox .StationSettingBox-list .browse input {
+ 	margin: 10px;
+ }
+ 
+ #UpdateSettings .Locations-box {
+ 	height: 50px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	margin-right: 20px;
+ 	float: left;
+ 	font-weight: 100;
+ }
+ 
+ #UpdateSettings .Locations {
+ 	margin: 15px 0;
+ }
+ 
+ #downLoadSetting .Locations-box {
+ 	height: 50px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	margin-right: 20px;
+ 	float: left;
+ 	font-weight: 100;
+ }
+ 
+ #downLoadSetting .Locations {
+ 	margin: 15px 0;
+ }

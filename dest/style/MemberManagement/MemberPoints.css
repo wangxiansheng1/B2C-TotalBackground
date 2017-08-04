@@ -1,0 +1,31 @@
+ /*会员列表*/
+ 
+ .data-reset a {
+ 	margin: 0;
+ 	margin-right: 20px;
+ 	margin-bottom: 10px;
+ }
+ 
+ #IntegralChange .form-horizontal .radio-inline {
+ 	width: 100px;
+ 	padding: 0 !important;
+ 	padding-top: 5px !important;
+ 	text-align: center;
+ 	height: 20px;
+ 	line-height: 20px;
+ }
+ 
+ #IntegralChange .form-horizontal .single {
+ 	width: 130px;
+ }
+ 
+ #IntegralChange .form-horizontal .radio-inline .Location {
+ 	width: 15px;
+ 	height: 15px;
+ 	top: 7px;
+ }
+ 
+ .MemberGrade,
+ .MembershipLevel {
+ 	display: none;
+ }

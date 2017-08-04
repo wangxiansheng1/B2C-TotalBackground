@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-普通信息编辑</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/StoreManagement/GeneralInformation.css" />
+
+	</head>
+
+	<body>
+		<!--普通信息编辑-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">店铺管理<span>&gt;</span>普通信息编辑</p>
+			<!--主体内容-->
+			<div class="storeMessage">
+				<!--店铺信息-->
+				<div class="storeMessage-total">
+					<p class="name ParentBox"><span>店铺名称：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></p>
+					<p class="ParentBox"><span>公司地址：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></p>
+					<p class="ParentBox"><span>联系电话：</span><input id="PhoneNumber" type="text" class="form-control" /><b class='WarningBox-content'></b></p>
+					<p class="ParentBox"><span>联系人：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></p>
+					<p class="ParentBox"><span>电子信箱：</span><input id="ElectronicMailbox" type="text" class="form-control" /><b class='WarningBox-content'></b></p>
+				</div>
+				<!--/店铺信息-->
+				<!--店铺证件-->
+				<div class="storeMessage-card">
+					<!--企业执照-->
+					<div class="card-certificate">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#company-pic" data-toggle="tab">企业三证</a>
+							</li>
+							<li>
+								<a href="#pic-total" data-toggle="tab">三证合一</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="company-pic">
+								<div class="company-pic">
+									<div class="company-pic-list"><span>企业营业执照（副本扫描件）：</span>
+										<div class="browse">
+											<input type="text" class="form-control" readonly="readonly" />
+											<a class="btn btn-primary" />上传</a>
+										</div>
+										<img src="../../images/back_03.jpg" />
+									</div>
+									<div class="company-pic-list"><span>企业税务登记证（副本扫描件）：</span>
+										<div class="browse">
+											<input type="text" class="form-control" readonly="readonly" />
+											<a class="btn btn-primary" />上传</a>
+										</div>
+										<img src="../../images/back_03.jpg" />
+									</div>
+									<div class="company-pic-list"><span>企业组织机构代码证：</span>
+										<div class="browse">
+											<input type="text" class="form-control" readonly="readonly" />
+											<a class="btn btn-primary" />上传</a>
+										</div>
+										<img src="../../images/back_03.jpg" />
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade " id="pic-total">
+								<div class="pic-total">
+									<div class="pic-total-list">
+										<span>三证合一上传：</span>
+										<div class="browse">
+											<input type="text" class="form-control" readonly="readonly" />
+											<a class="btn btn-primary" />上传</a>
+										</div>
+										<img src="../../images/back_03.jpg" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/企业执照-->
+				</div>
+			</div>
+			<!--提交-->
+			<div class="store-submit">
+				<a href="javascript:void(0);">确定</a>
+			</div>
+		</div>
+		<!--/普通信息编辑-->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/common.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

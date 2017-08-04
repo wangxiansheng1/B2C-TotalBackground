@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-商品管理</title>
+ 		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/CommodityManagement/CommodityManagement.css"/>
+	</head>
+
+	<body>
+		<!--分类管理-->
+		<div class="container">
+			<!--公共头部模块-->
+			<header>商品分类</header>
+			<!--主体部分-->
+			<!--主体内容-->
+			<div class="activityMan">
+				<div class="activityMan-total">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#now" data-toggle="tab">分类列表</a>
+						</li>
+						<li>
+							<a href="#loading" data-toggle="tab">新增分类</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="now">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="col-md-1">分类名称</th>
+										<th class="col-md-1">分类图片</th>
+										<th class="col-md-1">商品数量</th>
+										<th class="col-md-1">分类税率</th>
+										<th class="col-md-1">佣金比例</th>
+										<th class="col-md-1">开启状态</th>
+										<th class="col-md-1">排序</th>
+										<th class="col-md-1">控制</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span></span>美容护肤</td>
+										<td><img src="../../images/back_03.jpg" /></td>
+										<td>888</td>
+										<td>11.9%</td>
+										<td>50%</td>
+										<td width="10%">
+											<p class="EnableDisable"><b class="Enable">启用</b><b class="Disable">停用</b></p>
+										</td>
+										<td><input type="text" name="" id="" value="0" /></td>
+										<td>
+											<a href="javascript:;">编辑</a>
+											<a href="javascript:;">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tab-pane fade tableBox" id="loading">
+							<table class="table">
+								<tr>
+									<td>分类名称:&nbsp;&nbsp;<input class="CategoryName" type="text" /></td>
+									<td>分类税率:&nbsp;&nbsp;<input class="ClassificationRate" type="text" />&nbsp;%</td>
+									<td>佣金比例:&nbsp;&nbsp;<input class="CommissionRate" type="text" />&nbsp;%</td>
+								</tr>
+								<tr>
+									<td>上级分类:&nbsp;&nbsp;
+										<select>
+											<option>无</option>
+											<option>一级分类</option>
+										</select>
+										&nbsp;&nbsp;
+										<select>
+											<option>无</option>
+											<option>二级分类</option>
+										</select>
+									</td>
+									<td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开启状态:&nbsp;
+										<b class="Enable">启用</b><b class="Disable">停用</b>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="ClassifiedImage">分类图片:</div>&nbsp;&nbsp;<img class="images" src="../../images/back_03.jpg" /></td>
+									<td>排序:&nbsp;&nbsp;<input type="text" /></td>
+									<td>
+										<a class="submit" href="javascript:;">提交</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="activityMan-list-fenye fixed ">
+					<div class="list-fenye ">
+						<span>共100</span>
+						<span><em>1/5</em>页</span>
+						<ul>
+							<li>
+								<a href="javascript:; ">&laquo;</a>
+							</li>
+							<li>
+								<a href="javascript:; " class="active ">1</a>
+							</li>
+							<li>
+								<a href="javascript:; ">2</a>
+							</li>
+							<li>
+								<a href="javascript:; ">3</a>
+							</li>
+							<li>
+								<a href="javascript:; ">&raquo;</a>
+							</li>
+						</ul>
+						<span>跳转到<input type="number "><a href="javascript:; ">确定</a></span>
+					</div>
+				</div>
+			</div>
+			<!--/主体部分-->
+		</div>
+		<!--/分类管理-->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript " charset="utf-8 "></script>
+
+</html>

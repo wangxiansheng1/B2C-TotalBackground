@@ -1,0 +1,292 @@
+/*主体内容 */
+
+.comments {
+	min-width: 1150px;
+	overflow: auto;
+	zoom: 1;
+}
+
+.comments-total {
+	width: 40%;
+	float: left;
+	margin-top: 4px;
+	box-sizing: border-box;
+}
+
+.comments-total .ParentBox {
+	overflow: auto;
+	overflow-y: hidden;
+	zoom: 1;
+	margin: 20px 0;
+}
+
+.comments-total .ParentBox span {
+	float: left;
+	width: 36%;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+.comments-total .ParentBox input {
+	width: 63%;
+	float: left;
+}
+
+.comments-total .ParentBox input.first_lists {
+	width: 36%;
+	float: left;
+	margin: 0;
+	/*position: relative;*/
+}
+
+.Message {
+	display: none;
+	width: 14%;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f1f1f1;
+	border-radius: 0 0 5px 5px;
+	padding-left: 10px;
+}
+
+.comments-total .ParentBox select {
+	width: 20%;
+	margin-right: 5px;
+	float: left;
+	padding: 0 !important;
+}
+
+.upButton {
+	float: left;
+	margin-left: 10px;
+}
+
+
+/*新增右半部分*/
+
+.comments-card {
+	width: 57%;
+	height: auto;
+	margin-top: 20px;
+	box-sizing: border-box;
+	float: right;
+}
+
+.card-certificate {
+	width: 100%;
+	height: 300px
+}
+
+.pic-total,
+.company-pic {
+	width: 100%;
+	height: 250px;
+}
+
+.company-pic .company-pic-list {
+	width: 100%;
+	height: 33.3%;
+	float: left;
+}
+
+.company-pic .company-pic-list .browse {
+	width: 48%;
+	float: left;
+	margin-top: 25px;
+}
+
+.company-pic .company-pic-list .browse a {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+.company-pic span,
+.pic-total span {
+	float: left;
+	width: 35%;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	box-sizing: border-box
+}
+
+.company-pic img,
+.pic-total img {
+	width: 70px;
+	height: 34px;
+	float: left;
+	margin-top: 24px;
+}
+
+.pic-total span {
+	margin-top: 100px;
+}
+
+.pic-total .pic-total-list .browse {
+	width: 48%;
+	float: left;
+	margin-top: 100px;
+}
+
+.pic-total .pic-total-list .browse a {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+
+.pic-total img {
+	margin-top: 100px;
+}
+
+
+/*运营类目*/
+
+.Operate .Operate-title {
+	overflow: auto;
+	zoom: 1;
+	margin-bottom: 10px;
+}
+
+.Operate .Operate-title p {
+	width: 30%;
+	height: 37px;
+	line-height: 37px;
+	font-size: 14px;
+	float: left;
+}
+
+.Operate .Operate-title a {
+	float: right;
+}
+
+.add-operating tr th:nth-of-type(1),
+.add-operating tr th:nth-of-type(3),
+.add-operating tr th:nth-of-type(4) {
+	width: 18%
+}
+
+.add-operating tbody tr td input {
+	width: 50%;
+	text-align: center;
+}
+
+.add-new-leimu,
+.add-new-shenhe {
+	margin-left: 20px;
+	margin-top: 20px
+}
+
+.add-new-leimu select,
+.add-new-shenhe span {
+	width: 100px;
+	height: 26px;
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center
+}
+
+.add-new-leimu a,
+.add-new-shenhe a {
+	width: 78px;
+	height: 24px;
+	display: inline-block;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #999
+}
+
+
+/*新增运营类目*/
+
+.modal-body {
+	overflow: auto;
+	zoom: 1;
+	overflow-y: hidden;
+	padding-bottom: 15px !important;
+}
+
+.classification {
+	width: 30%;
+	border: 1px solid #E0E0E0;
+}
+
+.classification p,
+.classification ul li {
+	text-align: center;
+}
+
+.classification p {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: 500;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.classification ul li {
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.classification ul li.active,
+.classification ul li:hover {
+	background: #f0f0f0;
+}
+
+.OneLevelClassification {
+	margin-right: 5%;
+}
+
+.active {
+	background: #f0f0f0;
+}
+
+.active2 {
+	background: #f0f0f0;
+}
+
+.OneLevelClassification,
+.TwoLevelClassification {
+	float: left;
+}
+
+.ThreeLevelClassification {
+	float: right;
+}
+
+.TwoLevelClassification ul,
+.ThreeLevelClassification ul {
+	display: none;
+}
+
+
+/*修改默认样式*/
+
+.browse .btn-primary {
+	left: 80%;
+}
+
+.browse input[type="text"] {
+	width: 75%;
+}
+
+
+/*提示框*/
+
+.WarningBox-content {
+	padding-left: 37%;
+}

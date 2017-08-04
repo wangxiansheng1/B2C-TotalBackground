@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-站点设置</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/SystemSettings/siteSettings.css" />
+	</head>
+
+	<body>
+		<!--站点设置-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">系统设置<span>&gt;</span>站点设置</p>
+			<div class="comments">
+				<!--站点设置列表-->
+				<div class="comments-list">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#StationSetting" data-toggle="tab">全站设置</a>
+						</li>
+						<li>
+							<a href="#OrderSetting" data-toggle="tab">订单设置</a>
+						</li>
+						<li>
+							<a href="#IntegralSetting" data-toggle="tab">积分设置</a>
+						</li>
+ 						<li>
+							<a href="#UpdateSettings" data-toggle="tab">更新设置</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="StationSetting">
+							<div class="StationSettingBox">
+								<div class="StationSettingBox-list">
+									<span>1.&nbsp;总后台登录页面背景图:</span>
+									<div class="browse">
+										<input type="text" class="form-control" readonly="readonly" />
+										<a class="btn btn-primary">上传</a>
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>2.&nbsp;店铺后台登录页面背景图:</span>
+									<div class="browse">
+										<input type="text" class="form-control" readonly="readonly" />
+										<a class="btn btn-primary">上传</a>
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>3.&nbsp;总后台 LOGO上传:</span>
+									<div class="browse">
+										<input type="text" class="form-control" readonly="readonly" />
+										<a class="btn btn-primary">上传</a>
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>4.&nbsp;客服电话:</span>
+									<div class="browse">
+										<input type="text" class="form-control form-control-text" />
+									</div>
+								</div>
+
+								<div class="StationSettingBox-list">
+									<div class="store-submit">
+										<a href="javascript:;">提交</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="OrderSetting">
+							<div class="StationSettingBox">
+								<div class="StationSettingBox-list">
+									<span>1.&nbsp;订单自动取消时间:</span>
+									<div class="browse">
+										<input type="text" class="form-control" /><span>小时</span><span>（从提交订单起，未付款订单在此设置的时间后将自动被取消）</span> </div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>2.&nbsp;订单自动确认收货时间：</span>
+									<div class="browse">
+										<input type="text" class="form-control" /><span>天</span><span>（从订单发货起，未确认收货订单在此设置的时间后将自动被确认）</span> </div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>3.&nbsp;订单退货时间：</span>
+									<div class="browse">
+										<input type="text" class="form-control" /><span>天</span><span>（从订单发货起，订单在此设置的时间后将不能申请退货）</span> </div>
+								</div>
+								<div class="StationSettingBox-list">
+									<div class="store-submit">
+										<a href="javascript:;">提交</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="IntegralSetting">
+							<div class="StationSettingBox">
+								<div class="StationSettingBox-list">
+									<span></span>
+									<div class="browse">
+										<span>A、乐享卡会员</span><span>B、尊享卡会员</span></div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>签到赠送积分（个)</span>
+									<div class="browse">
+										<input type="text" class="form-control" /><input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>成功订单获取积分（倍）</span>
+									<div class="browse">
+										<input type="text" class="form-control" /><input type="text" class="form-control" />
+									</div>
+								</div>
+
+								<div class="StationSettingBox-list">
+									<div class="store-submit">
+										<a href="javascript:;">提交</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="UpdateSettings">
+							<div class="StationSettingBox">
+								<div class="StationSettingBox-list">
+									<span>1.&nbsp;下载地址：</span>
+									<div class="browse">
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>2.&nbsp;安卓版本：</span>
+									<div class="browse">
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>3.&nbsp;IOS版本：</span>
+									<div class="browse">
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>4.&nbsp;安卓是否强制更新：</span>
+									<div class="browse">
+										<label class="Locations-box"><input class="Locations" type="radio" name="radio1">&nbsp;是</label>
+										<label class="Locations-box"><input class="Locations" type="radio" name="radio1">&nbsp;否</label>
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>5.&nbsp;IOS是否强制更新：</span>
+									<div class="browse">
+										<label class="Locations-box"><input class="Locations" type="radio" name="radio2">&nbsp;是</label>
+										<label class="Locations-box"><input class="Locations" type="radio" name="radio2">&nbsp;否</label>
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>4.&nbsp;安卓更新描述：</span>
+									<div class="browse">
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="StationSettingBox-list">
+									<span>5.&nbsp;IOS更新描述：</span>
+									<div class="browse">
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+
+								<div class="StationSettingBox-list">
+									<div class="store-submit">
+										<a href="javascript:;">提交</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--站点设置列表-->
+			</div>
+		</div>
+		<!--/站点设置-->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/common.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
