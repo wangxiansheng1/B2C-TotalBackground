@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-财务编辑</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/StoreManagement/FinancialInformation.css" />
+	</head>
+
+	<body>
+		<!--财务编辑编辑-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">店铺管理<span>&gt;</span>财务编辑</p>
+			<!--主体内容-->
+			<div class="comments">
+				<!--店铺信息-->
+				<div class="comments-total">
+					<div class="comments-total-box ParentBox"><span>店铺结算银行名称：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></div>
+					<div class="comments-total-box ParentBox"><span>结算账号 ：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></div>
+					<div class="comments-total-box ParentBox"><span>公司名称（个人）：</span><input type="text" class="form-control" /><b class='WarningBox-content'></b></div>
+					<div class="comments-total-box"><span><i class="text-danger">*</i>对账日：</span>
+						<select class="form-control">
+							<option>次日</option>
+							<option>每周</option>
+							<option>每半月</option>
+							<option>每月</option>
+						</select>
+					</div>
+					<div class="comments-total-box"><span>店铺有效期 ：</span>
+						<select class="form-control" name="year1"></select>
+						<select class="form-control" name="month1"></select>
+						<select class="form-control" name="day1"></select>
+					</div>
+					<div class="comments-total-box"><span>店铺等级：</span>
+						<select class="form-control">
+							<option>等级1</option>
+							<option>等级2</option>
+							<option>等级3</option>
+							<option>等级4</option>
+						</select>
+					</div>
+					<div class="comments-total-box">
+						<span>运营类目 ：</span>
+						<p class="form-control">
+							<a data-toggle="modal" data-target="#LoginLog" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;新增运营类目</a>
+						</p>
+					</div>
+					<div class="comments-total-box"><span></span>
+						<!--运营类目-->
+						<div class="Operate">
+							<div class="tab-content">
+								<div class="add-operating">
+									<table class="table  table-bordered">
+										<thead>
+											<tr>
+												<th class="col-md-2">一级分类</th>
+												<th class="col-md-2">二级分类</th>
+												<th class="col-md-2">三级分类</th>
+												<th class="col-md-2">佣金比例</th>
+												<th class="col-md-2">操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>酒水饮料</td>
+												<td>葡萄酒</td>
+												<td>干红</td>
+												<td><input type="text" placeholder="5%" /></td>
+												<td>
+													<a class="Delete">删除</a>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>白酒</td>
+												<td></td>
+												<td><input type="text" placeholder="5%" /></td>
+												<td>
+													<a class="Delete">删除</a>
+												</td>
+											</tr>
+											<tr>
+												<td>酒水饮料</td>
+												<td>葡萄酒</td>
+												<td>干红</td>
+												<td><input type="text" placeholder="5%" /></td>
+												<td>
+													<a class="Delete">删除</a>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td>白酒</td>
+												<td></td>
+												<td><input type="text" placeholder="5%" /></td>
+												<td>
+													<a class="Delete">删除</a>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!--/运营类目-->
+					</div>
+				</div>
+				<!--/店铺信息-->
+			</div>
+			<!--提交-->
+			<div class="store-submit">
+				<a href="javascript:void(0);">确定</a>
+			</div>
+		</div>
+		<!--/财务编辑编辑-->
+		<!--新增运营类目模态框（Modal） -->
+		<div class="modal fade" id="LoginLog" tabindex="-1" role="dialog" aria-labelledby="LoginLogLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="LoginLogLabel">新增运营类目</h4>
+					</div>
+					<div class="modal-body">
+						<div class="classification OneLevelClassification">
+							<p>一级分类</p>
+							<ul class="ClassA">
+								<li class="active2">酒料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+								<li>酒水饮料</li>
+							</ul>
+						</div>
+						<div class="classification TwoLevelClassification">
+							<p>二级分类</p>
+							<ul class="ClassB">
+								<li class="active2">可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+								<li>可乐饮料</li>
+							</ul>
+						</div>
+						<div class="classification ThreeLevelClassification">
+							<p>三级分类</p>
+							<ul class="ClassC">
+								<li class="active2">干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+								<li>干红葡萄酒</li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary confirm">确认</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--新增运营类目模态框（Modal） -->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/YMDClass.js" anguage="javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/common.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		/*时间插件*/
+		new YMDselect('year1', 'month1', 'day1');
+		/*新增运营类目的联动*/
+		$(".OneLevelClassification>ul>li").on('click', function() {
+			$(".TwoLevelClassification>ul").eq($(this).index()).css('display', 'block').siblings().not("p").css('display', 'none');
+		});
+		$(".TwoLevelClassification>ul>li").on('click', function() {
+			$(".ThreeLevelClassification>ul").eq($(this).index()).css('display', 'block').siblings().not("p").css('display', 'none');
+		});
+		$(".Delete").on('click', function() {
+			$(this).parents("tr").remove();
+		});
+		$(".classification ul li").on('mouseover', function() {
+			$(this).addClass('active')
+		})
+		$(".classification ul li").on('mouseout', function() {
+			$(this).removeClass('active')
+		})
+		$(".classification ul li").on('click', function() {
+			$(this).addClass('active2');
+			$(this).siblings().removeClass('active2');
+		});
+		(function() {
+			var TEXT_ONE = "";
+			$(".ClassA li").on('click', function() {
+				TEXT_ONE = $(".ClassA .active2").text();
+				 
+			});
+			var TEXT_TWO = "";
+			$(".ClassB li").on('click', function() {
+				TEXT_TWO = $(".ClassB .active2").text();
+				 
+			});
+			var TEXT_THIREE = "";
+			$(".ClassC li").on('click', function() {
+				TEXT_THIREE = $(".ClassC .active2").text();
+				 
+			});
+
+			$(".confirm").on('click', function() {
+				//.console.log(TEXT_ONE + TEXT_TWO + TEXT_THIREE);
+			});
+		}());
+	</script>
+
+</html>

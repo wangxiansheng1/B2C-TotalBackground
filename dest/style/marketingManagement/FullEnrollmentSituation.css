@@ -1,0 +1,7 @@
+.comments{
+	margin-top: 20px;
+}
+.comments-list table tbody tr td div{
+	width: 70%;
+	height: 0 auto;
+}

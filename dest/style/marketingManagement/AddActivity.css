@@ -1,0 +1,155 @@
+ .LeftBox {
+ 	width: 50%;
+ 	float: left;
+ }
+ 
+ .LeftBox ul li,
+ .RightBox ul li {
+ 	margin: 10px 0;
+ 	zoom: 1;
+ 	overflow: auto;
+ 	overflow-y: hidden;
+ }
+ 
+ .LeftBox>ul>li>label,
+ .RightBox>ul>li>label {
+ 	width: 100%;
+ 	height: 100%;
+ }
+ 
+ .LeftBox ul li label .Determine {
+ 	position: relative;
+ 	top: 0;
+ 	left: 10px;
+ }
+ 
+ .LeftBox ul li label b {
+ 	width: 20px;
+ 	height: 35px;
+ 	line-height: 35px;
+ 	float: left;
+ 	text-align: center;
+ }
+ 
+ .LeftBox ul li span,
+ .RightBox ul li span {
+ 	width: 14%;
+ 	font-size: 14px;
+ 	text-align: right;
+ 	height: 35px;
+ 	line-height: 35px;
+ 	text-align: right;
+ 	font-weight: bold;
+ 	float: left;
+ 	margin: 0 2%;
+ }
+ 
+ .LeftBox ul li input[type="text"] {
+ 	width: 30%;
+ 	float: left;
+ }
+ 
+ .LeftBox>ul>li>label.radioLabel input.Location {
+ 	top: 1px !important;
+ 	left: 2px !important;
+ 	margin-right: 4px;
+ }
+ 
+ .LeftBox ul li select {
+ 	float: left;
+ 	width: 30%;
+ }
+ 
+ .RightBox {
+ 	width: 40%;
+ 	float: left;
+ }
+ 
+ .RightBox ul li label {
+ 	width: 100%;
+ 	height: 100%;
+ }
+ 
+ .RightBox ul li.DeleteItem {
+ 	margin-top: 50px;
+ }
+ 
+ .RightBox ul li.DeleteItem a {
+ 	margin-left: 12%;
+ 	float: left;
+ }
+ 
+ .RightBox ul li.DeleteItem a.SetBlacklist {
+ 	margin-left: 5%;
+ }
+ 
+ .RightBox ul li.DeleteItem-list {
+ 	margin-top: 10px;
+ }
+ 
+ .RightBox ul li input[type="text"] {
+ 	width: 60%;
+ 	float: left;
+ 	margin: 0 10px;
+ }
+ 
+ .RightBox ul li input[type="checkbox"] {
+ 	float: left;
+ 	top: 7px;
+ 	margin-left: 12%;
+ }
+ 
+ .RightBox ul li span {
+ 	width: auto;
+ 	margin: 0 5px;
+ 	font-weight: 500;
+ 	font-size: 12px;
+ }
+ 
+ .CouponSetting,
+ .RightBox-list {
+ 	display: none;
+ }
+ 
+ .RightBox-list-two h3 {
+ 	height: 30px;
+ 	line-height: 30px;
+ 	margin-top: 10px;
+ 	font-size: 14px;
+ 	font-weight: bold;
+ }
+ 
+ .LeftBox ul li select,
+ .LeftBox ul li input[type="text"],
+ .RightBox ul li input[type="text"] {
+ 	font-weight: normal;
+ }
+ /*新增等级*/
+ 
+ .GradeCondition {
+ 	float: left;
+ 	margin-right: 10px;
+ 	height: 35px;
+ 	line-height: 35px;
+ }
+ 
+ .GradeCondition span {
+ 	float: left;
+ 	margin: 0 5px;
+ }
+ 
+ .GradeCondition input[type="checkbox"] {
+ 	float: left;
+ }
+ 
+ .Location {
+ 	width: 16px;
+ 	height: 16px;
+ 	top: 6px;
+ }
+ 
+ .form-group input[type="text"] {
+ 	width: 80%;
+ 	float: left;
+ 	margin-right: 20px;
+ }

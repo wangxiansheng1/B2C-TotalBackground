@@ -1,0 +1,66 @@
+.comments {
+	width: auto;
+	height: auto;
+	min-width: 1100px;
+	margin: 0 20px
+}
+
+.comments-list {
+	margin-top: 10px;
+}
+
+
+/*新增活动~活动时间*/
+
+.ActivityTime,
+.ActivityTime span,
+.ActivityTime input[type="text"] {
+	float: left;
+}
+
+#ViewArticle span,
+.ActivityTime span {
+	width: 18px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.ActivityTime input[type="text"] {
+	width: 200px;
+}
+
+#NewArticle .modal-dialog,
+#ModifyArticle .modal-dialog {
+	width: 750px;
+}
+
+.Locations-box {
+	margin: 0px 10px !important;
+}
+
+.modal-body table {
+	border: 1px solid #E0E0E0;
+}
+
+
+/*查看文章*/
+
+#ViewArticle p,
+#ViewArticle span {
+	float: left;
+}
+
+#ViewArticle p {
+	width: auto;
+}
+
+
+/*全选框*/
+
+table tbody tr td input[type="checkbox"] {
+	top: 0;
+}
+
+table tbody tr td {
+	line-height: 100%;
+}

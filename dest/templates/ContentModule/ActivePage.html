@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-活动页配置</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../kindeditor/themes/default/default.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/ContentModule/ActivePage.css" />
+	</head>
+
+	<body>
+		<div class="common-view">
+			<div class="comments">
+				<p class="common-little-title">活动页配置</p>
+				<div class="layout_box">
+					<!--头部-->
+					<div class="layout_head"></div>
+					<!--头部-->
+					<!--nav部分-->
+					<div class="NavList">
+						<ul class="NavListBox">
+
+						</ul>
+						<p class="addNavListList">+</p>
+					</div>
+					<!--nav部分-->
+					<!--内容区-->
+					<div class="tab-content add-tab-content">
+
+					</div>
+					<!--保存配置浮层-->
+					<div class="save_template">
+						<input type="hidden" name="appData">
+						<input type="button" id="saveBtn" class="btn btn_green" value="保存配置">
+					</div>
+					<!--保存配置浮层-->
+				</div>
+			</div>
+		</div>
+		<!--新增图片-->
+		<div class="modal fade" id="editingPicture" tabindex="-1" role="dialog" aria-labelledby="editingPictureLabel" aria-hidden="true">
+			<div class="modal-dialog pictire">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="editingPictureLabel">添加图片</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="comments-list">
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#On-line" data-toggle="tab">上传本地图片</a>
+									</li>
+									<li>
+										<a href="#local" data-toggle="tab">选择图库图片</a>
+									</li>
+									<li>
+										<a href="#NetworkPicture" data-toggle="tab">添加网络图片</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="On-line">
+										<p><button type="button" class="btn btn-primary Choice">选择图片</button></p>
+										<ul class="PictureList">
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="local">
+										<div class="SeleclPicture">
+											<span>选择图片</span>
+											<select class="form-control">
+												<option value="0" selected="selected">全部</option>
+												<option value="1">首页</option>
+												<option value="2">商品</option>
+												<option value="3">专题页图片</option>
+											</select>
+											<input class="btn btn-primary" type="button" value="搜索" />
+										</div>
+										<ul class="PictureList">
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="NetworkPicture">
+										<div class="NetworkPicturePath">
+											<span>网络图片路径</span>
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!--/新增图片-->
+		<!--新增商品模态框（Modal） -->
+		<div class="modal fade" id="AddMerchandisePictures" tabindex="-1" role="dialog" aria-labelledby="AddMerchandisePicturesLabel" aria-hidden="true">
+			<div class="modal-dialog pictire">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="AddMerchandisePicturesLabel">选择商品</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="CommentsList">
+								<div class="comments-search">
+									<div class="comments-search-item">
+										<div class="form-inline">
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">商品名称</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">商品货号</span>
+													<input class="form-control" type="text" />
+												</div>
+											</div>
+											<div class="form-group">
+												<a href="javascript:;" class="btn btn-primary">查询</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comments-list">
+									<div class="tab-content">
+										<div class="tab-pane fade in active">
+											<table class="table table-striped table-hover">
+												<thead>
+													<tr>
+														<th class="col-md-2"><input type="checkbox" name="b" />选择</th>
+														<th class="col-md-2">序号</th>
+														<th class="col-md-2">图片</th>
+														<th class="col-md-2">货品编号</th>
+														<th class="col-md-2">货品名称</th>
+														<th class="col-md-2">优惠价</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>1</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>2</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>3</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>4</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>5</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>6</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>7</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>8</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>9</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /> </td>
+														<td>10</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>11</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /> </td>
+														<td>12</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>13</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>14</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+													<tr>
+														<td><input type="checkbox" name="a" /></td>
+														<td>15</td>
+														<td><img src="../../images/activity221_10(2).jpg" /></td>
+														<td>201608261352091</td>
+														<td>惠普（HP） HP ...</td>
+														<td>849.00</td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!--分页器-->
+									<div class="fixed">
+										<div class="list-fenye">
+											<span>共100</span>
+											<span><em>1/5</em>页</span>
+											<ul class="pagination">
+												<li>
+													<a href="javascript:void(0);">&laquo;</a>
+												</li>
+												<li class="active">
+													<a href="javascript:void(0);">1</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">2</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">3</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">4</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">5</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">&raquo;</a>
+												</li>
+											</ul>
+											<span>跳转到<input type="text"></span>
+											<a href="javascript:;" class="btn btn-primary">确定</a>
+										</div>
+									</div>
+									<!--/分页器-->
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary">提交</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+		</div>
+		<!--/新增商品模态框（Modal） -->
+		<!--编辑活动页名称模态框（Modal） -->
+		<div class="modal fade" id="ModifyName" tabindex="-1" role="dialog" aria-labelledby="ModifyNameLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="ModifyNameLabel">编辑活动名称和活动URL</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">活动名称:</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control ModifyContent">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">活动URL:</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control ModifyContent">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary ModifyName">确认</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--/编辑活动页名称模态框（Modal） -->
+		<!--删除配置页确认提示-->
+		<div class="modal fade in" id="DeletePage" tabindex="-1" role="dialog" aria-labelledby="DeletePageLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="DeletePageLabel">删除提示</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-12 control-label">你确定要删除此活动页吗?</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary twoDeleTecolumn" data-dismiss="modal">确认</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--删除配置页确认提示-->
+		<!--删除确认提示-->
+		<div class="modal fade in" id="Delete" tabindex="-1" role="dialog" aria-labelledby="DeleteLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="DeleteLabel">删除提示</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-12 control-label">你确定要删除此模块吗?</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary TwoDelete" data-dismiss="modal">确认</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!--删除确认提示-->
+
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<script src="../../scripts/plus/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../kindeditor/kindeditor-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../kindeditor/lang/zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/ActivePage.js" type="text/javascript" charset="utf-8"></script>
+	 
+	 
+
+</html>

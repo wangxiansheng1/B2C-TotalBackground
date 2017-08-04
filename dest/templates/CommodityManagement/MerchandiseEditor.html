@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>汇银乐虎总后台管理系统-商品编辑</title>
+		<link rel="stylesheet" type="text/css" href="../../style/plus/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../kindeditor/themes/default/default.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/plus/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../style/CommodityManagement/MerchandiseEditor.css" />
+	</head>
+
+	<body>
+		<!--商品编辑-->
+		<div class="common-view">
+			<!--标题-->
+			<p class="common-title">商品管理&nbsp;&gt;&nbsp;商品编辑</p>
+			<div class="edit">
+				<div class="edit-list">
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#basic" data-toggle="tab">基本信息</a>
+						</li>
+						<li>
+							<a href="#commodity" data-toggle="tab">商品信息</a>
+						</li>
+						<li>
+							<a href="#details" data-toggle="tab">商品详情</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<!--基本信息-->
+						<div class="tab-pane fade in active" id="basic">
+							<ul>
+								<li><span>商品名称:</span><input class="form-control" type="text" /></li>
+								<li><span>商品副标题:</span><input class="form-control" type="text" /></li>
+								<li class="select" id="select">
+									<span>供应商:</span>
+									<input type="text" class="select-choose form-control" />
+									<div class="select-list">
+										<ul>
+											<a class="select-dos current" href="javascript:void (0);">1</a>
+											<a class="select-dos" href="javascript:void (0);">44</a>
+											<a class="select-dos" href="javascript:void (0);">76</a>
+											<a class="select-dos" href="javascript:void (0);">18</a>
+											<a class="select-dos" href="javascript:void (0);">34</a>
+											<a class="select-dos" href="javascript:void (0);">91</a>
+											<a class="select-dos" href="javascript:void (0);">93</a>
+											<a class="select-dos" href="javascript:void (0);">32</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">12</a>
+											<a class="select-dos" href="javascript:void (0);">12</a>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<span>虚拟库存:</span>
+									<label class="Locations-box"><input class="Locations VirtualInventoryOpen" type="radio" name="radio">&nbsp;是</label>
+									<label class="Locations-box"><input class="Locations VirtualInventoryClose" type="radio" name="radio">&nbsp;否</label>
+								</li>
+								<li class="select" id="rselect">
+									<span>商品产地:</span>
+									<input type="text" class="select-choose form-control" />
+									<div class="select-list">
+										<ul>
+											<a class="select-dos current" href="javascript:void (0);">欧洲</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+											<a class="select-dos" href="javascript:void (0);">13</a>
+											<a class="select-dos" href="javascript:void (0);">17</a>
+											<a class="select-dos" href="javascript:void (0);">110</a>
+											<a class="select-dos" href="javascript:void (0);">12938</a>
+											<a class="select-dos" href="javascript:void (0);">138738</a>
+											<a class="select-dos" href="javascript:void (0);">127</a>
+											<a class="select-dos" href="javascript:void (0);">138</a>
+											<a class="select-dos" href="javascript:void (0);">3949</a>
+											<a class="select-dos" href="javascript:void (0);">1999</a>
+											<a class="select-dos" href="javascript:void (0);">147463</a>
+											<a class="select-dos" href="javascript:void (0);">12766</a>
+											<a class="select-dos" href="javascript:void (0);">1239</a>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<span>商品品牌:</span>
+									<select class="form-control">
+										<option value="0" selected="selected">华为</option>
+										<option value="1">苹果</option>
+										<option value="1">VIVO</option>
+									</select>
+								</li>
+								<li>
+									<span>商品来源:</span>
+									<select class="form-control">
+										<option value="0" selected="selected">一般贸易</option>
+										<option value="1">海外直邮</option>
+										<option value="1">保税仓</option>
+									</select>
+								</li>
+								<li>
+									<span>运费模板:</span>
+									<label class="Locations-box"><input class="Locations seller" type="radio" name="radio1"/>&nbsp;卖家承担运费</label>
+									<label class="Locations-box"><input class="Locations Buyers" type="radio" name="radio1" checked="checked"/>&nbsp;买家承担运费</label>
+									<select class="form-control Template">
+										<option value="0" selected="selected">店铺后台设置的运费模板</option>
+									</select>
+								</li>
+								<li>
+									<span>上架端:</span>
+									<label class="end"><input type="checkbox" class="Location"/>&nbsp;PC端 </label>
+									<label class="end"><input type="checkbox" class="Location" checked="checked"/>&nbsp;App端 </label>
+								</li>
+								<li>
+									<span>选择规格:</span>
+									<select class="form-control" style="display: inline-block;">
+										<option value="0" selected="selected">内存</option>
+										<option value="1">颜色</option>
+										<option value="2">版本</option>
+									</select>
+									<a class="Determine btn btn-primary">确定</a>
+								</li>
+								<li>
+									<span></span>
+									<div class="Memory">
+										<div class="MemoryLsit" style="border: 0;">
+											<div class="Memory-title">内存</div>
+											<div class="Memory-lists">
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><a class="btn btn-info" data-toggle="modal" data-target="#Specifications">+</a></label>
+											</div>
+										</div>
+										<div class="MemoryLsit">
+											<div class="Memory-title">内存</div>
+											<div class="Memory-lists">
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;32G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;64G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;128G</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;256G</label>
+												<label><a class="btn btn-info" data-toggle="modal" data-target="#Specifications">+</a></label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><span>选择属性:</span>
+									<select class="form-control" style="display: inline-block;">
+										<option value="0">属性1</option>
+										<option value="1" selected="selected">属性2</option>
+										<option value="2">属性3</option>
+									</select>
+									<a class="Determine btn btn-primary">确定</a>
+								</li>
+								<li><span></span>
+									<div class="Memory">
+										<div class="MemoryLsit" style="border: 0;">
+											<div class="Memory-title">属性2</div>
+											<div class="Memory-lists">
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值1</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值2</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值3</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值4</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值5</label>
+												<label><input class="Location" type="checkbox" name="checkbox"/>&nbsp;值6</label>
+												<label><a class="btn btn-info" data-toggle="modal" data-target="#Specifications">+</a></label>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li> <span>商品图片:</span>
+									<a class="btn btn-primary" data-toggle="modal" data-target="#editingPicture">编辑商品图片</a>
+								</li>
+								<li class="img-list">
+									<span></span>
+									<div class="pictire-content">
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+										<div class="pictire-list">
+											<img src="../../images/back_03.jpg" />
+											<span class="glyphicon glyphicon-remove"></span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--提交-->
+							<div class="store-submit">
+								<a href="javascript:void(0);">前往设置商品信息</a>
+							</div>
+						</div>
+						<!--基本信息-->
+						<!--商品信息-->
+						<div class="tab-pane fade" id="commodity">
+							<div class="CommodityInformation">
+								<div class="CommodityInformationLsit">
+									<div class="PictureInformation">
+										<dl>
+											<dt><img src="../../images/back_03.jpg"/>
+											<span class="DeleteButton glyphicon glyphicon-remove"></span>
+										</dt>
+											<dd>
+												<a class="btn btn-primary">上传图片</a>
+											</dd>
+										</dl>
+										<p>16G+亮黑色</p>
+									</div>
+									<div class="SelectColumn">
+										<div class="comments-search">
+											<div class="comments-search-item">
+												<div class="form-inline">
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">货号</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">商品条形码</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销量</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销售价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">税费</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">库存</span><input type="text" class="form-control Stock">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">成本价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">重量</span><input type="text" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn_list">
+									<a class="btn btn-primary Enable">启用</a>
+									<a class="btn btn-primary Disable">停用</a>
+								</div>
+							</div>
+							<div class="CommodityInformation">
+								<div class="CommodityInformationLsit">
+									<div class="PictureInformation">
+										<dl>
+											<dt><img src="../../images/back_03.jpg"/>
+											<span class="DeleteButton glyphicon glyphicon-remove"></span>
+										</dt>
+											<dd>
+												<a class="btn btn-primary">上传图片</a>
+											</dd>
+										</dl>
+										<p>16G+亮黑色</p>
+									</div>
+									<div class="SelectColumn">
+										<div class="comments-search">
+											<div class="comments-search-item">
+												<div class="form-inline">
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">货号</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">商品条形码</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销量</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销售价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">税费</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">库存</span><input type="text" class="form-control Stock">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">成本价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">重量</span><input type="text" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn_list">
+									<a class="btn btn-primary Enable">启用</a>
+									<a class="btn btn-primary Disable">停用</a>
+								</div>
+							</div>
+							<div class="CommodityInformation">
+								<div class="CommodityInformationLsit">
+									<div class="PictureInformation">
+										<dl>
+											<dt><img src="../../images/back_03.jpg"/>
+											<span class="DeleteButton glyphicon glyphicon-remove"></span>
+										</dt>
+											<dd>
+												<a class="btn btn-primary">上传图片</a>
+											</dd>
+										</dl>
+										<p>16G+亮黑色</p>
+									</div>
+									<div class="SelectColumn">
+										<div class="comments-search">
+											<div class="comments-search-item">
+												<div class="form-inline">
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">货号</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">商品条形码</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销量</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">销售价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">税费</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">库存</span><input type="text" class="form-control Stock">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">成本价</span><input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon">重量</span><input type="text" class="form-control">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn_list">
+									<a class="btn btn-primary Enable">启用</a>
+									<a class="btn btn-primary Disable">停用</a>
+								</div>
+							</div>
+							<!--提交-->
+							<div class="store-submit">
+								<a href="javascript:void(0);">前往设置商品详情</a>
+							</div>
+						</div>
+						<!--/商品信息-->
+						<!--商品详情-->
+						<div class="tab-pane fade" id="details">
+							<div class="CommodityDetails">
+								<p class="CommodityDetails-title">商品详情</p>
+								<form>
+									<textarea name="content" style="width:100%;height:200px;"></textarea>
+								</form>
+							</div>
+							<div class="CommodityDetails">
+								<p class="CommodityDetails-title">服务详情</p>
+								<form>
+									<textarea name="content" style="width:100%;height:200px;"></textarea>
+								</form>
+							</div>
+							<div class="store-submit">
+								<a href="javascript:void(0);">暂存</a>
+								<a href="javascript:void(0);">提交</a>
+							</div>
+						</div>
+						<!--/商品详情-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/商品编辑-->
+		<!-- 新增规格模态框（Modal） -->
+		<div class="modal fade" id="Specifications" tabindex="-1" role="dialog" aria-labelledby="SpecificationsLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="SpecificationsLabel">新增规格值</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">规格值</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 新增规格模态框（Modal） -->
+		<!-- 新增属性模态框（Modal） -->
+		<div class="modal fade" id="Attribute" tabindex="-1" role="dialog" aria-labelledby="AttributeLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="AttributeLabel">新增属性值</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label class="col-md-3 control-label">属性值</label>
+								<div class="col-md-5">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!-- 新增属性模态框（Modal） -->
+		<!--新增图片-->
+		<div class="modal fade" id="editingPicture" tabindex="-1" role="dialog" aria-labelledby="editingPictureLabel" aria-hidden="true">
+			<div class="modal-dialog pictire">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="editingPictureLabel">添加图片</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-horizontal">
+							<div class="comments-list">
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#On-line" data-toggle="tab">上传本地图片</a>
+									</li>
+									<li>
+										<a href="#local" data-toggle="tab">选择图库图片</a>
+									</li>
+									<li>
+										<a href="#NetworkPicture" data-toggle="tab">添加网络图片</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="On-line">
+										<p><input class="btn btn-primary" type="button" value="选择图片" />
+											<input type="file" value="选择图片" />
+										</p>
+										<ul class="PictureList">
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="local">
+										<div class="SeleclPicture">
+											<span>选择图片</span>
+											<select class="form-control">
+												<option value="0" selected="selected">全部</option>
+												<option value="1">首页</option>
+												<option value="2">商品</option>
+												<option value="3">专题页图片</option>
+											</select>
+											<input class="btn btn-primary" type="button" value="搜索" />
+										</div>
+										<ul class="PictureList">
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+											<li><img src="../../images/0.jpg" />
+												<span><img src="../../images/xuanzhong.png"/></span>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="NetworkPicture">
+										<div class="NetworkPicturePath">
+											<span>网络图片路径</span>
+											<input class="form-control" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+		</div>
+		<!--/新增图片-->
+	</body>
+	<script src="../../scripts/plus/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../kindeditor/kindeditor-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../kindeditor/lang/zh_CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/plus/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*富文本框插件*/
+		KindEditor.ready(function(K) {
+			K.create('textarea[name="content"]', {
+				autoHeightMode: true,
+				afterCreate: function() {
+					this.loadPlugin('autoheight');
+				},
+				afterBlur: function() {
+					this.sync();
+				}
+			});
+		});
+
+		$(".seller").on('click', function() {
+			$(".Template").hide()
+		})
+		$(".Buyers").on('click', function() {
+			$(".Template").show()
+		})
+		$(".Enable").on('click', function() {
+			$(this).css('opacity', '0.4');
+			$(this).siblings().css('opacity', '1');
+			$(this).parent().prev().css('opacity', '1');
+			$(this).parent().prev().find("input").removeAttr('disabled');
+		});
+		$(".Disable").on('click', function() {
+			$(this).css('opacity', '0.4');
+			$(this).siblings().css('opacity', '1');
+			$(this).parent().prev().css('opacity', '0.2');
+			$(this).parent().prev().find("input").attr('disabled', 'disabled');
+		});
+		/*关闭库存*/
+		$(".VirtualInventoryClose").on('click', function() {
+			$(".Stock").attr("disabled", 'disabled');
+		});
+		$(".VirtualInventoryOpen").on('click', function() {
+			$(".Stock").removeAttr("disabled");
+		});
+		/*获得焦点*/
+		$("#basic ul li span").on('click', function() {
+			$(this).next().focus();
+		});
+	</script>
+
+	<script type="text/javascript">
+		onSelect('#select');
+
+		onSelect('#rselect');
+
+		function onSelect(name) {
+
+			//input被选中
+			$(name + ' .select-choose').on('click', function() {
+				var e = event || window.event;
+				e.stopPropagation();
+				$(name + ' .select-list .current').removeClass('current');
+				$(name + ' .select-list').show();
+				$(name + ' .select-list').scrollTop(0);
+				var VALUE = $(this).val();
+				for(var i = 0; i < $(name + ' .select-list a').length; i++) {
+					var NAME = $(name + ' .select-list a').eq(i).html();
+					if(NAME.match(VALUE)) {
+						$(name + ' .select-list a').eq(i).addClass('select-dos');
+					} else {
+						$(name + ' .select-list a').eq(i).removeClass('select-dos');
+					}
+				}
+				$(name + ' .select-list .select-dos').eq(0).addClass('current');
+			});
+
+			// document事件关闭
+			$(document).on('click', function() {
+				$(name + ' .select-list').hide();
+			});
+
+			$(name + ' .select-list a').on('click', function(event) {
+				var e = event || window.event;
+				e.stopPropagation();
+				var VALUE = $(this).html();
+				$(name + ' .select-choose').val(VALUE);
+				$(name + ' .select-list').hide();
+				return false;
+			});
+
+			$(name + ' .select-choose').on('keyup', function(event) {
+				if(event.keyCode == 38 || event.keyCode == 40 || event.keyCode == 13) {
+					return false;
+				} else {
+					$(name + ' .select-list .current').removeClass('current');
+					var VALUE = $.trim($(this).val());
+					for(var i = 0; i < $(name + ' .select-list a').length; i++) {
+						var NAME = $(name + ' .select-list a').eq(i).html();
+						if(NAME.match(VALUE)) {
+							$(name + ' .select-list a').eq(i).addClass('select-dos');
+						} else {
+							$(name + ' .select-list a').eq(i).removeClass('select-dos');
+						}
+					}
+					$(name + ' .select-list .select-dos').eq(0).addClass('current');
+				}
+			});
+
+			$(name + ' .select-list a').on('click', function() {
+				$(name + ' .select-list .current').removeClass('current');
+				$(this).addClass('current');
+				return false;
+			});
+
+			$(name + ' .select-list a').on('mouseenter', function() {
+				$(name + ' .select-list .current').removeClass('current');
+				$(this).addClass('current');
+				return false;
+			});
+
+			$(name).on('keydown', function(event) {
+				var e = event || window.event;
+				e.stopPropagation();
+				var SCROLLTOP = $(name + ' .select-list').scrollTop();
+
+				//上键
+				if(event.keyCode == 38) {
+					if(parseFloat($(name + ' .select-list ul').height()) > parseFloat($(name + ' .select-list').height()) && (parseFloat($(name + ' .select-list ul').height()) - parseInt($(name + ' .select-list').height())) >= parseFloat(SCROLLTOP)) {
+						$(name + ' .select-list').scrollTop((parseFloat(SCROLLTOP) - parseFloat($(name + ' .select-list ul a').height())));
+					} else if(parseFloat($(name + ' .select-list ul').height()) > parseFloat($(name + ' .select-list').height()) && (parseFloat($(name + ' .select-list ul').height()) - parseInt($(name + ' .select-list').height())) < parseFloat(SCROLLTOP)) {
+						$(name + ' .select-list').scrollTop(((parseFloat($(name + ' .select-list ul').height()) - parseInt($(name + ' .select-list').height()))));
+					}
+					var INDEX = "";
+					for(var i = 0; i < $(name + ' .select-list .select-dos').length; i++) {
+						if($(name + ' .select-list .select-dos').eq(i).hasClass('current')) {
+							INDEX = i;
+						}
+					}
+					var NINDEX = parseFloat(parseFloat(INDEX) - parseFloat(1));
+					if(NINDEX < 0) {
+						return false;
+					}
+					$(name + ' .select-list .current').removeClass('current');
+					$(name + ' .select-list .select-dos').eq(NINDEX).addClass('current');
+					event.stopPropagation();
+				}
+
+				//下键
+				else if(event.keyCode == 40) {
+					if(parseFloat($(name + ' .select-list ul').height()) > parseFloat($(name + ' .select-list').height()) && (parseFloat($(name + ' .select-list ul').height()) - parseFloat(SCROLLTOP)) > parseInt($(name + ' .select-list').height())) {
+						$(name + ' .select-list').scrollTop((parseFloat(SCROLLTOP) + parseFloat($(name + ' .select-list ul a').height())));
+					}
+					var INDEX = "";
+					for(var i = 0; i < $(name + ' .select-list .select-dos').length; i++) {
+						if($(name + ' .select-list .select-dos').eq(i).hasClass('current')) {
+							INDEX = i;
+						}
+					}
+					var NINDEX = parseFloat(parseFloat(INDEX) + parseFloat(1));
+					if(NINDEX == $(name + ' .select-list .select-dos').length) {
+						return false;
+					}
+					$(name + ' .select-list .current').removeClass('current');
+					$(name + ' .select-list .select-dos').eq(NINDEX).addClass('current');
+					event.stopPropagation();
+				}
+
+				//回车键
+				else if(event.keyCode == 13) {
+					var NAME = $(name + ' .select-list .current').html();
+					$(name + ' .select-choose').val(NAME).blur();
+					$(name + ' .select-list').hide();
+				}
+			});
+
+			$(name + ' .select-list').scroll(function() {
+				$(name + ' .select-list a').addClass('pointer-none').delay(500).queue(function(next) {
+					$(name + ' .select-list a').removeClass('pointer-none');
+					next();
+				});
+			});
+
+		}
+	</script>
+
+</html>

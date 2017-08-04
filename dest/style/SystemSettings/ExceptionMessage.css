@@ -1,0 +1,7 @@
+.MessageDetails {
+	width: 300px;
+	height: 30px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	cursor: pointer;
+}
